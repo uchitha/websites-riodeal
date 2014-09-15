@@ -80,7 +80,7 @@
 				</div>
 				<div id='menu'>
 				</div>
-				<script type="text/javascript" src="menu.html.js"></script>
+				
 			</div>
 		</div>
 		<!--/ Navigation Ends -->   
@@ -305,5 +305,11 @@
 		<script src="js/html5shiv.js"></script>
 		<!-- Custom JS -->
 		<script src="js/custom.js"></script>
+       <script>
+      jQuery(document).ready(function() {
+        $("#menu").load("menu.tpl.html"); 
+        $("#footer").load("footer.tpl.html"); 
+      });
+    </script>
 	</body>	
 </html>
