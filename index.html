@@ -33,35 +33,7 @@
 	<body>
 
 		<!-- Header starts -->
-		<header>
-		   <div class="container">
-			  <div class="row">
-				 <div class="col-md-4 col-sm-4">
-					<!-- Logo and site link -->
-					<div class="logo">
-					   <h1><a href="index.html">ReoDeal<span class="color">.</span></a></h1>
-					</div>
-				 </div>
-				 <div class="col-md-4 col-sm-4 col-sm-offset-4 col-md-offset-4">
-					<div class="list">
-					   <!-- Add your phone number here -->
-					   <div class="phone">
-						  <i class="fa fa-phone"></i> Phone: 123-456-7890
-					   </div>
-					   <hr />
-					   <!-- Add your email id here -->
-					   <div class="email">
-						  <i class="fa fa-envelope-o"></i> Email: someting@gmail.com
-					   </div>
-					   <hr />
-					   <!-- Add your address here -->
-					   <div class="address">
-						  <i class="fa fa-home"></i> Address: 12, Srtington Street, NY
-					   </div>
-					</div>
-				 </div>
-			  </div>
-		   </div>
+		<header id="header">
 		</header>
 		<!--/ Header ends -->
 
@@ -199,7 +171,7 @@
 									data-endspeed="500"
 									data-endeasing="Power4.easeIn"
 									data-captionhidden="on"
-									style="z-index: 6">No Compromise
+									style="z-index: 6">On time
 								</div>
 								<!-- LAYER NR. 4 -->
 								<!-- <div class="tp-caption large_bold_white skewfromleftshort customout"
@@ -275,18 +247,20 @@
 				<div class="main-content">
 				  <div class="row">
 					<div class="col-md-7">
-					  <h2>Company</h2>
-					  <p class="main-meta">Brining the benefits of our success</p>
-					  <p>We want to bring the success we had in Asia Pacific region for the past 15 years to Western Australia</p>
+					  <h2>ReoDeal</h2>
+					  <p class="main-meta">High quality steel products at affordable prices</p>
+					  <p>We want to bring the success we had in Asia Pacific region for the past 15 years to Western Australia. After completion of 1 year of analysis in the West Australian market ReoDeal was established in Western Australia in 2013.</p>
+					  <p>Our aim is to deliver high quality, industry preferred steel products to our clients at competitive pricing.</p>
+					  <p>Our team comprise of experienced professional who have exposure to wide array of industry matters in Australia and Worldwide.</p>
 					</div>
 					<div class="col-md-5">
 					  <div class="main-box">
 						<h4>Quality</h4>
 						<p>Reodeal’s products comply with the relevant Australian Standards such as <strong> Australasian Certification Authority for Reinforcing and Structural Steels Limited ("ACRS") </strong> in respect of our all steel reinforcing products.</p>
 						<ul>
-						  <li><i class="fa fa-angle-right"></i> Quality point #1</li>
-						  <li><i class="fa fa-angle-right"></i> Quality point #2</li>
-						  <li><i class="fa fa-angle-right"></i> Quality point #3</li>
+						  <li><i class="fa fa-angle-right"></i> Reliability</li>
+						  <li><i class="fa fa-angle-right"></i> Cost Effective</li>
+						   <li><i class="fa fa-angle-right"></i> Continuous Process Improvements</li>
 						</ul>
 						<div class="button">
 						  <a href="./contact.html"><i class="fa fa-envelope-o"></i> Contact Us</a>
@@ -319,9 +293,9 @@
 							<div class="col-md-3 col-sm-6">
 							   <div class="afeature">
 								  <div class="afmatter">
-									 <i class="fa fa-gift"></i>
-									 <h4>Special Offers???</h4>
-									 <p>?????</p>
+									 <i class="fa fa-suitcase"></i>
+									 <h4>End to end service</h4>
+									 <p>We provide our customers with full range of services realted to steel</p>
 								  </div>
 							   </div>                        
 							</div>
@@ -399,6 +373,7 @@
 
 			$("#menu").load("menu.tpl.html"); 
   			$("#footer").load("footer.tpl.html"); 
+  			$("#header").load('header.tpl.html');
   			});
 		</script>
 	</body>	
