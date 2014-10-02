@@ -16,7 +16,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 font-family: "Oswald", sans-serif;
 font-weight:normal;
-color:#666;
+color:#1F1F1F;
 margin:3px 0px;
 padding:3px 0px;
 }
@@ -207,8 +207,7 @@ color:#fff !important;
 -moz-transition:background 1s ease;
 -o-transition:background 1s ease;
 transition:background 1s ease;
-font-size:13px !important;
-}
+font-size:18px !important;}
 
 .navbar .nav > li > a:hover{
 color:#fff !important;
@@ -698,7 +697,7 @@ padding:0px;
 margin:0px;
 font-size:20px;
 line-height:35px;
-color:#777;
+color:#1F1F1F;
 background:url('../img/dot.png') left center repeat-x;
 background-size:4px 20px;
 }
@@ -1730,7 +1729,7 @@ background:#fafafa;
 border-radius:4px;
 box-shadow:inset 0px 0px 1px #ccc;
 border:1px solid #eee;
-color:#999;
+color:#1F1F1F;
 font-size:23px;
 line-height:33px;
 }
@@ -2081,7 +2080,7 @@ line-height:22px;
 /* Footer */
 
 footer{
-background:#222 url('../img/fback.png') repeat;
+background:#363636;
 margin-top:10px;
 font-size:13px;
 padding-top:10px;
@@ -2321,6 +2320,7 @@ footer .social a {
    
    .form-horizontal .control-label {
 		text-align: left;
+		font-color: #1F1F1F;
 	}
 	
 	.prdetails h5{

@@ -304,8 +304,8 @@ position:absolute;
 color:#fff;
 text-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
 font-weight:700;
-font-size:20px;
-line-height:20px;
+font-size:30px;
+line-height:30px;
 font-family:Arial;
 margin:0px;
 border-width:0px;
@@ -329,6 +329,34 @@ border-color:rgb(255, 255, 255);
 border-style:none;
 }
 
+.tp-caption.large_bold_blue_25 {
+font-size:55px;
+line-height:65px;
+font-weight:700;
+font-family:"Open Sans";
+color:#2C38FF;
+text-decoration:none;
+background-color:transparent;
+text-align:center;
+text-shadow:#000 0px 5px 10px;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+.tp-caption.large_bold_blue_30 {
+font-size:30px;
+line-height:35px;
+font-weight:700;
+font-family:"Open Sans";
+color:#2C38FF;
+text-decoration:none;
+background-color:transparent;
+text-align:center;
+text-shadow:#000 0px 5px 10px;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
 .tp-caption.medium_text_shadow {
 font-size:25px;
 line-height:25px;
