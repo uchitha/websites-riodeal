@@ -98,7 +98,7 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-3" style="color: #1F1F1F;font-size: 14px" for="website">Telephone</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" id="website">
+                                        <input type="text" class="form-control" id="phone">
                                     </div>
                                 </div>
                                 <!-- Comment -->
@@ -112,7 +112,7 @@
                                 <div class="form-group">
                                     <!-- Buttons -->
                                     <div class="col-md-9 col-md-offset-3">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-primary" >Submit</button>
                                         <button type="reset" class="btn btn-default">Reset</button>
                                     </div>
                                 </div>
@@ -177,6 +177,58 @@
             $("#footer").load("footer.tpl.html");
             $("#header").load('header.tpl.html');
         });
+
+        $("form").submit(function(e) {
+             e.preventDefault();
+             sendIt();
+        });
+
+    function sendIt() {
+        
+        var sendGridApi = "https://api.sendgrid.com/api/mail.send.json";
+       
+        var from = $("#email").val();
+        var body = $("#comment").val();
+        var phone = $("#phone").val();
+        var name = $("#name").val();
+
+        var bodyHtml = "<h2>New client message from reodeal.com.au</h2>" +
+                        "<hr/>" +
+                        "<label><b>Name: </b></label><label>NAME</label>" +
+                        "<br/><br/>" +  
+                        "<label><b>Phone: </b></label><label>PHONE</label>" +
+                        "<br/><br/>" +  
+                        "<label><b>Email: </b></label><label>EMAIL</label>" +
+                        "<br/><br/>" +  
+                        "<label><b>Message: </b></label><label>MESSAGE</label>";
+
+        bodyHtml = bodyHtml.replace('NAME',name);
+        bodyHtml = bodyHtml.replace('PHONE',phone);
+        bodyHtml = bodyHtml.replace('EMAIL',from);
+        bodyHtml = bodyHtml.replace('MESSAGE',body);
+
+        var mailJsonObj = {
+            api_user: "azure_cd97a87945b4e49467cd6fe54f425d57@azure.com",
+            api_key: "km39aP9H2BpTgkl",
+            from: from,
+            to: "info@reodeal.com.au",
+            subject: "Reodeal Web : Contact Us",
+            text: bodyHtml,
+            html: bodyHtml
+        };
+
+        var sendMail = $.post(sendGridApi,mailJsonObj,null,"jsonp"); 
+
+        setTimeout(function(data){
+            $("#email").val("");
+            $("#phone").val("");
+            $("#name").val("");
+            $("#comment").val("");
+            alert('Thank you. REODEAL will get back to you soon.');
+        },10);
+      
+    }
+
     </script>
 </body>
 </html>
